@@ -1,20 +1,18 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import Button from "./components/Button";
+import StatefulCounter from "./components/StatefulCounter";
+import StatelessDisplay from "./components/StatelessDisplay";
+import ClassCounter from "./components/ClassCounter";
 import "./App.css";
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
-
-  const handleButtonClick = () => {
-    alert(`Введено текст: ${inputValue}`);
-  };
-
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>React</h1>
-      <Button text="Натисніть мене" onClick={handleButtonClick} />
+    <div>
+      <h1>React Components Example</h1>
+      <StatefulCounter />
+      <StatelessDisplay message="This is a stateless component!" />
+      <ClassCounter />
     </div>
   );
 }
