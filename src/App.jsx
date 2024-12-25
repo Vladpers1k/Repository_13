@@ -7,7 +7,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+    <div>
       <h1>React Components: Stateful and Stateless</h1>
       <StatefulCounter />
       <StatelessDisplay message="This is a stateless component!" />
